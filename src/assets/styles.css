@@ -8,16 +8,28 @@ ul li{
 
 }
 
+a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+section {
+    max-width: 800px;
+    margin: auto;
+}
 h1{
     font-size: 40px;
     font-weight: 900;
     color: lime;
 }
 
-a{
-    text-decoration: none;
-    color: lime;
-}
 
 .formula{
     width: 90%;
@@ -45,11 +57,11 @@ input {
 }
 
 .options span{
-    border: 1px solid lime;
+    border: 1px solid rgb(8, 112, 8);
     border-radius: 5px;
     padding: 2px 25px;
     margin-right: 20px;
-    background-color: lime;
+    background-color: rgb(8, 112, 8);
     cursor: pointer;
     font-size: 11px;
     font-weight: bold;
@@ -57,4 +69,32 @@ input {
   
 h3{
     color: rgb(8, 112, 8);
+}
+
+table{
+    padding: 20px;
+    width: 100%;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    appearance: none;
+    background-color: transparent;
+    color: #fff;
+    text-align: left;
+    border: none;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    text-align: left;
 }

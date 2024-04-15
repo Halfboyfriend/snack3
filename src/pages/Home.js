@@ -7,10 +7,11 @@ function Home() {
   return (
     <Layout>
       <Container>
-        <section className="py-5">
+        <section className="py-5 mt-5">
+
           <h1>Snack3 Staking</h1>
 
-          <h4>
+          <h4 style={{maxWidth: "500px", fontSize: "16px"}}>
             Enjoy the benefits of weekly SNACKS yield, revenue share, gauges
             voting, farm yield boosting, and so much more!
           </h4>
@@ -23,7 +24,7 @@ function Home() {
           <form>
             <h3>ADD STAKE</h3>
             <div className="formula">
-              <input placeholder="0" className="input-tag" />
+              <input placeholder="0" type="number" className="input-tag" required />
               <span className="balance">Balance: 0 </span>
 
               <p>USD</p>
@@ -39,25 +40,25 @@ function Home() {
             <h3>ADD DURATION</h3>
 
             <div className="formula">
-              <input placeholder="0" disabled className="input-tag" />
+              <input placeholder="0" type="number" className="input-tag" required />
               <span className="balance"> Weeks </span>
 
-              <p>USD</p>
+              <p>MONTHS</p>
             </div>
 
             <div className="options mt-3">
-              <span>25%</span>
-              <span>50%</span>
-              <span>75%</span>
+              <span>7</span>
+              <span>12</span>
+              <span>40</span>
               <span>Max</span>
             </div>
 
-            <h4>LOCK OVERVIEW</h4>
+            <h3 className="mt-5">LOCK OVERVIEW</h3>
 
-            <div style={{ margin: "auto", textAlign: "center" }}>
-            <table class="table text-center">
+            <div style={{ textAlign: "center" }}>
+            <table class="text-start" style={{margin: "auto"}}>
               <tbody>
-                <tr>
+                <tr className="mt-5">
                   <td>
                     SNACKS TO BE LOCKED
                   </td>

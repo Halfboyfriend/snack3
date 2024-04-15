@@ -1,37 +1,23 @@
 import React from "react";
 import { Container, Button } from "semantic-ui-react";
-import "../assets/styles.css"
+import "../assets/styles.css";
 
 function Layout({ children }) {
   return (
     <React.Fragment>
       <Container>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
+        <nav>
+          <div className="mt-5">
             <a
               class="navbar-brand"
               href="/"
-              style={{ fontSize: "25px", fontWeight: "bolder", color: 'lime' }}
+              style={{ fontSize: "35px", fontWeight: "bolder"}}
             >
               Snack3
             </a>
 
-            <ul style={{display: "flex"}}>
-              <li >
-                <a aria-current="page" href="/">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a  href="/">
-                  Features
-                </a>
-              </li>
-            </ul>
-            <span class="navbar-text">
-              <Button primary size="small">
-                Connect
-              </Button>
+            <span class="navbar-text" style={{float: "right", marginTop: "-20px"}}>
+              <w3m-button />
             </span>
           </div>
         </nav>
