@@ -11,7 +11,7 @@ function Layout({ children }) {
             <a
               class="navbar-brand"
               href="/"
-              style={{ fontSize: "35px", fontWeight: "bolder"}}
+              style={{ fontSize: "30px", fontWeight: "bolder"}}
             >
               Snack3
             </a>
